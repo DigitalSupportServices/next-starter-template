@@ -36,23 +36,68 @@ export default function Home() {
           </a>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
+      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-import React from 'react';
+
+// Main App component
+const App: React.FC = () => {
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-slate-900 text-white p-4">
+      
+      {/* Main content container */}
+      <div className="bg-slate-800 p-8 rounded-xl shadow-2xl max-w-lg w-full text-center">
+        
+        {/* Heading for the services */}
+        <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-slate-100">
+          Our Digital Services
+        </h1>
+        
+        {/* Container for the service links */}
+        <div className="flex flex-col space-y-6">
+          
+          {/* Link for Digital Business Services */}
+          <a
+            href="#" // Placeholder link
+            className="group block p-4 rounded-xl bg-slate-700 hover:bg-slate-600 transition duration-300 transform hover:scale-105"
+          >
+            <div className="flex items-center justify-between">
+              <span className="text-xl font-semibold text-slate-100 group-hover:text-cyan-400">
+                Digital Business Services
+              </span>
+              <svg className="h-6 w-6 text-slate-300 group-hover:text-cyan-400 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+            <p className="mt-2 text-sm text-slate-400 text-left">
+              From strategy to implementation, we help transform your business for the digital age.
+            </p>
+          </a>
+
+          {/* Link for Digital Support Services */}
+          <a
+            href="#" // Placeholder link
+            className="group block p-4 rounded-xl bg-slate-700 hover:bg-slate-600 transition duration-300 transform hover:scale-105"
+          >
+            <div className="flex items-center justify-between">
+              <span className="text-xl font-semibold text-slate-100 group-hover:text-indigo-400">
+                Digital Support Services
+              </span>
+              <svg className="h-6 w-6 text-slate-300 group-hover:text-indigo-400 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+            <p className="mt-2 text-sm text-slate-400 text-left">
+              Reliable, 24/7 technical assistance and maintenance to keep your operations running smoothly.
+            </p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default App;
+<a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
           target="_blank"
